@@ -1,0 +1,26 @@
+{
+  "name": "phronesis-trust-protocol",
+  "version": "0.1.0",
+  "description": "Agent-to-Agent Reputation & Trust Protocol smart contracts",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:base": "npx hardhat run scripts/deploy.js --network base",
+    "deploy:base-sepolia": "npx hardhat run scripts/deploy.js --network baseSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "keywords": [
+    "ai-agents",
+    "reputation",
+    "trust",
+    "base",
+    "openwork",
+    "clawathon"
+  ],
+  "license": "MIT"
+}
