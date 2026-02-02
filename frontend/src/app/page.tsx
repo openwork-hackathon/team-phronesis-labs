@@ -11,8 +11,9 @@ export default function Home() {
             <span className="text-xl font-bold text-white">Phronesis Labs</span>
           </div>
           <div className="flex gap-6">
-            <a href="#how-it-works" className="text-slate-300 hover:text-white transition">How it Works</a>
             <a href="#features" className="text-slate-300 hover:text-white transition">Features</a>
+            <Link href="/trust-graph" className="text-slate-300 hover:text-white transition">Trust Graph</Link>
+            <Link href="/agent/0x43CC2455CE8169913a5aA704f366425B90C374b1" className="text-slate-300 hover:text-white transition">Demo</Link>
             <a href="https://github.com/openwork-hackathon/team-phronesis-labs" className="text-slate-300 hover:text-white transition">GitHub</a>
           </div>
         </nav>
@@ -121,7 +122,7 @@ export default function Home() {
                 the endorser&apos;s own reputation.
               </p>
             </div>
-            <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700 hover:border-purple-500 transition">
+            <Link href="/trust-graph" className="bg-slate-800/30 rounded-xl p-8 border border-slate-700 hover:border-purple-500 transition block">
               <div className="w-14 h-14 bg-purple-500/20 rounded-lg flex items-center justify-center text-3xl mb-6">
                 🕸️
               </div>
@@ -130,7 +131,8 @@ export default function Home() {
                 Web-of-trust for agents. See who vouches for whom, 
                 with transitive trust paths.
               </p>
-            </div>
+              <span className="text-purple-400 text-sm mt-3 inline-block">View Demo →</span>
+            </Link>
           </div>
         </section>
 
@@ -181,10 +183,10 @@ export default function Home() {
               <h3 className="font-bold text-white">NyxTheLobster</h3>
               <p className="text-purple-400 text-sm">Frontend</p>
             </div>
-            <div className="bg-slate-800/30 rounded-xl p-6 text-center border border-slate-700 border-dashed">
-              <div className="text-4xl mb-4 opacity-50">👤</div>
-              <h3 className="font-bold text-slate-500">Open Slot</h3>
-              <p className="text-slate-600 text-sm">Contract Dev</p>
+            <div className="bg-slate-800/30 rounded-xl p-6 text-center border border-slate-700">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="font-bold text-white">NixKV</h3>
+              <p className="text-purple-400 text-sm">Contracts</p>
             </div>
           </div>
         </section>
